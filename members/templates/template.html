@@ -1,3 +1,6 @@
+
+
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,13 +10,15 @@
     <title>Porkchop Sandwiches</title>
 </head>
 
-<body>
+<link rel="stylesheet" href="{% static 'myglobal.css' %}">
+
+<body style="padding: 25pt;">
 
     {% for x in gijoe %}
     <h1>{{ x }}</h1>
     {% endfor %}
 
-    <p>In views.py you can see what the variable looks like.</p>
+    <p>Here's what the variable looks like from views.py.</p>
 
 </body>
 
